@@ -11,11 +11,11 @@ function ajax()
         {    
                 if(response[i].completed== true)
                 {
-                    output+='<tr><td><input type="checkbox" name="test" id="check1" checked disabled ></td><td>'+response[i].title +'</td></tr>';
+                    output+='<tr><td><input type="checkbox" name="test"  id="check1" checked disabled ></td><td>'+response[i].title +'</td></tr>';
                     
                 }
                 else{
-                    output+='<tr><td><input type="checkbox" name="test" id="check" value="" onchange="checking()"></td><td>'+response[i].title +'</td></tr>';
+                    output+='<tr><td><input type="checkbox" name="test" class="largerCheckbox" id="check" value="" onchange="checking()"></td><td>'+response[i].title +'</td></tr>';
                 }
                
                document.getElementById("todotable").innerHTML=output; 
